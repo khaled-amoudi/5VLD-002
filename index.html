@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css" />
+
+
+    
+    <title>WAVE</title>
+  </head>
+  <body>
+
+
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fab fa-pied-piper-square fa-3x text-warning"></i>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#" data-value="main">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-value="news">آخر الاخبار</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-value="service">خدماتنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-value="intract">تفاعل معنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-value="help">الدعم الفني</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <a type="button" class="btn btn-outline-warning mx-2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-1">تسجيل الدخول</a>
+            <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                  <div class="modal-body">
+                    <div class="container p-4">
+                      <form action="">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label text-warning">البريد الإلكتروني :</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">لا تقم بمشاركة هذا الإيميل مع أي شخص آخر.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label text-warning">كلمة المرور :</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check d-flex">
+                          <input type="checkbox" class="form-check-input ms-1" id="exampleCheck1">
+                          <label class="form-check-label text-warning mx-1" for="exampleCheck1">تذكرني</label>
+                        </div>
+                        <div class="mb-3 text-center">
+                          <button type="submit" class="btn btn-warning btn-lg">تسجيل دخول</button>
+                        </div>
+                        <div class="form-text mt-3 text-center">هل نسيت كلمة المرور؟ <a href="#">اضغط هنا</a></div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <form class="d-flex">
+            <a type="button" class="btn btn-warning" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-2">إنشاء حساب</a>
+
+            <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                  <div class="modal-body">
+                    <div class="container p-4">
+                      <form action="">
+                        <div class="row">
+
+                          <div class="col-md-6">
+                            <div class="row">
+                              <div class="col-6">
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label text-warning">الإسم الأول :</label>
+                                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                              </div>
+                              <div class="col-6">
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label text-warning">الإسم الثاني :</label>
+                                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label text-warning">تاريخ الميلاد :</label>
+                              <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label text-warning">الجنس :</label>
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected disabled>إضغط هنا لتحديد جنسك</option>
+                                <option value="male">ذكر</option>
+                                <option value="female">أنثى</option>
+                              </select>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label text-warning">تحديد صورة شخصية :</label>
+                              <input type="file" name="" id="">
+                            </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label text-warning">البريد الإلكتروني :</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label text-warning">كلمة المرور :</label>
+                              <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label text-warning">تأكيد كلمة المرور :</label>
+                              <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                              <button type="submit" class="btn btn-warning btn-lg">تسجيل دخول</button>
+                            </div>
+                            <div class="form-text mt-3">هل نسيت كلمة المرور؟ <a href="#">اضغط هنا</a></div>
+
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Header -->
+    <header id="main" style="background-image: url('images/bg-home.jpg')">
+      <div class="overlay d-flex align-items-center">
+        <div class="container">
+          <div class="content d-flex justify-content-center align-items-center">
+            <div>
+              <h2 class="rounded">هنا حيث كل ما تريد</h2>
+              <div class="q text-center mt-4">
+                <span class="text-white mx-2">احصل على حسابك الآن</span>
+                <a type="button" class="btn btn-warning" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal-2">أنشئ حسابك الآن</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start News -->
+    <section class="news" id="news">
+      <div class="row">
+        <div class="col-md-7 order-md-2">
+          <div class="bg p-5">
+            <h2 class="text-white mt-5">هل تبحث عن آخر الأخبار المتنوعة ؟</h2>
+            <p class="h5 mt-4 text-dark">أنت في المكان الصحيح</p>
+            <div class="news-link mt-5">
+              <a class="btn btn-warning" href="#">إقرأ الآن</a>
+              <img src="images/news-png.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="img col-md-5 order-md-1">
+          <img src="images/news.svg" />
+        </div>
+      </div>
+    </section>
+    <!-- End News -->
+
+    <!-- Start Service Section -->
+    <section class="service" id="service" style="background-image: url('images/bg-service.jpg');">
+      <div class="container d-flex justify-content-center">
+        <div class="row">
+
+          
+          <div class="item col-md-4">
+            <div class="card bg-dark text-white p-2 pb-4" style="width: 18rem">
+              <div class="card-body row">
+                <div class="start col-6">
+                  <h5 class="card-title">الفضي</h5>
+                  <span class="badge rounded-pill bg-success">جيد جدا</span>
+                </div>
+                <div class="end col-6 text-dark text-center">
+                  99$
+                </div>
+              </div>
+              <div class="px-3 my-4">
+                <table class="table text-white">
+                  <tbody>
+                    <tr>
+                      <th scope="row">لا إعلانات</th>
+                      <td>✔️</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">إشعارات</th>
+                      <td>✔️</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">أوسمة</th>
+                      <td>❌</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="card-body text-center">
+                <a href="#" class="btn btn-outline-warning card-link">
+                  إشترك الآن
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item col-md-4">
+            <div class="card bg-dark text-white p-2 pb-4" style="width: 18rem">
+              <div class="card-body row">
+                <div class="start col-6">
+                  <h5 class="card-title">الذهبي</h5>
+                  <span class="badge rounded-pill bg-success">ممتاز</span>
+                </div>
+                <div class="end col-6 text-dark text-center">
+                  119$
+                </div>
+              </div>
+              <div class="px-3 my-4">
+                <table class="table text-white">
+                  <tbody>
+                    <tr>
+                      <th scope="row">لا إعلانات</th>
+                      <td>✔️</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">إشعارات</th>
+                      <td>✔️</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">أوسمة</th>
+                      <td>✔️</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="card-body text-center">
+                <a href="#" class="btn btn-outline-warning card-link">
+                  إشترك الآن
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="item col-md-4">
+            <div class="card bg-dark text-white p-2 pb-4" style="width: 18rem">
+              <div class="card-body row">
+                <div class="start col-6">
+                  <h5 class="card-title">البرونزي</h5>
+                  <span class="badge rounded-pill bg-success">جيد</span>
+                </div>
+                <div class="end col-6 text-dark text-center">
+                  79$
+                </div>
+              </div>
+              <div class="px-3 my-4">
+                <table class="table text-white">
+                  <tbody>
+                    <tr>
+                      <th scope="row">لا إعلانات</th>
+                      <td>✔️</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">إشعارات</th>
+                      <td>❌</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">أوسمة</th>
+                      <td>❌</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="card-body text-center">
+                <a href="#" class="btn btn-outline-warning card-link">
+                  إشترك الآن
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+    <!-- End Service Section -->
+
+
+    <!-- Start Intract Section -->
+    <section class="intract" id="intract">
+      <div class="container d-flex justify-content-center">
+
+      </div>
+    </section>
+    <!-- End Intract Section -->
+
+
+    <footer id="help">
+      <div class="container">
+        <div class="parent text-white d-flex justify-content-between align-items-center">
+          <div class="copy">
+            <p>&copy; كل الحقوق محفوظة لدى Wave</p>
+          </div>
+
+          <div class="help text-center">
+            <p class="display-6">للتواصل مع الدعم الفني </p>
+            <a class="btn btn-warning btn-lg w-75 h-50" href="#">إضغط هنا</a>
+          </div>
+
+          <div class="social d-flex"> 
+            <p>تابعنا على مواقع التواصل الاجتماعي  :</p>
+            <a class="mx-2" href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a class="mx-2" href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+            <a class="mx-2" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
